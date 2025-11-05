@@ -2,7 +2,8 @@ package pkLaboratorio;
 
 import pkLaboratorio.pkHumano.*;
 import pkLaboratorio.pkProtista.pkProtozoo.*;
-import pkLaboratorio.pkFinanza.*;
+
+import java.util.List;
 
 public class Laboratorio {
     private String log;
@@ -15,10 +16,22 @@ public class Laboratorio {
 
     public void iniciarMundoProtista() {
         MicroBiologo biologo = new MicroBiologo("1887654321", "Dra. Ana", "Biología Molecular");
-        Ameba ameba = new Ameba("Ameba Proteus");
-        Paramecio paramecio = new Paramecio("Paramecio Aurelia");
-        Euglena euglena = new Euglena("Euglena Viridis");
-        Plasmodium plasmodium = new Plasmodium("Plasmodium Globator");
+        List<ReinoProtista> protozoos = List.of(
+            new Ameba("Ameba Proteus"),
+            new Paramecio("Paramecio Aurelia"),
+            new Euglena("Euglena Viridis"),
+            new Plasmodium("Plasmodium Globator"),
+            new Ciliado("Ciliado Balantidium"),
+            new Flagelado("Flagelado Giardia"),
+            new Esporozoo("Esporozoo Gregarina"),
+            new Foraminifero("Foraminífero Globigerina"),
+            new Sarcodino("Sarcodino Radiolaria"),
+            new Stentor("Stentor Coeruleus"),
+            new Toxoplasma("Toxoplasma Gondii"),
+            new Trypanosoma("Trypanosoma Cruzi")
+        );
+
+
 
         if (!biologo.setClave("usrBio", "passBio")) {
             System.out.println("No se pudo establecer la clave del biólogo.");
@@ -29,26 +42,31 @@ public class Laboratorio {
         if (ingresar(biologo)) {
             System.out.println("Acceso concedido. Bienvenido/a, " + biologo.getNombre() + ".");
 
-            System.out.println("\n--- caso de uso: REQ 02 ---");
-            registrar(ameba);
-            registrar(paramecio);
-            registrar(euglena);
-            registrar(plasmodium);
-
-            System.out.println("\n--- caso de uso: REQ 03 ---");
-            biologo.observar(ameba);
-            biologo.observar(paramecio);
-            biologo.observar(euglena);
-            biologo.observar(plasmodium);
+            for (ReinoProtista p : protozoos) {
+                System.out.println("\n--- caso de uso: REQ 02 ---");
+                registrar(p);
+                System.out.println("\n--- caso de uso: REQ 03 ---");
+                biologo.observar(p);
+            }
 
             System.out.println("\n--- caso de uso: REQ 04 ---");
-            ameba.alimentar();
-            ameba.moverHacia(paramecio);
-            paramecio.alimentar();
-            paramecio.interactuarCon(euglena);
-            euglena.fotosintetizar();
-            euglena.interactuarCon(plasmodium);
-            plasmodium.reproducir();
+
+            for (int i = 0; i < protozoos.size(); i++) {
+                ReinoProtista actual = protozoos.get(i);
+                actual.alimentar();
+
+                // comportamiento especial
+                if (actual instanceof Euglena e) e.fotosintetizar();
+                if (actual instanceof Plasmodium p) p.reproducir();
+
+                // interacción con el siguiente
+                if (i < protozoos.size() - 1) {
+                    ReinoProtista siguiente = protozoos.get(i + 1);
+                    if (actual instanceof Euglena e) e.interactuarCon(siguiente);
+                    if (actual instanceof Paramecio p) p.interactuarCon(siguiente);
+                }
+            }
+
         } else {
             System.out.println("Acceso denegado. Credenciales incorrectas.");
         }
