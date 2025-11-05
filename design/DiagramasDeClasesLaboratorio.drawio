@@ -1,0 +1,316 @@
+<mxfile host="embed.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram id="diagram-id-1" name="Page-1">
+    <mxGraphModel dx="1777" dy="1125" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b79d6d74-2d7c-434a-8f4e-220f503658f8" value="Converted by ImageToDrawio" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-45;fontSize=70;fontColor=#E0E0E0;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="850" y="550" width="500" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="&lt;div&gt;&lt;b&gt;Laboratorio&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-log: String&lt;br&gt;-pass: String&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Laboratorio()&lt;br&gt;+iniciarMundoProtista(): void&lt;br&gt;-ingresar(usuario: MicroBiologo): boolean&lt;br&gt;-registrar(especie: ReinoProtista): boolean&lt;br&gt;+getLog(): String&lt;br&gt;+setLog(log: String): void&lt;br&gt;+setPass(pass: String): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;div&gt;&lt;b&gt;MicroBiologo&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-id: String&lt;br&gt;-nombre: String&lt;br&gt;-especialidad: String&lt;br&gt;-login: String&lt;br&gt;-password: String&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+MicroBiologo(id: String, nombre: String, especialidad: String)&lt;br&gt;+setClave(log: String, pass: String): boolean&lt;br&gt;+observar(protista: ReinoProtista): void&lt;br&gt;+getLogin(): String&lt;br&gt;+getPassword(): String&lt;br&gt;+getNombre(): String&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+obervarAlga(Alga alga):void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="20" y="290" width="360" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;div&gt;&lt;b&gt;Euglena&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Euglena(nombre: String)&lt;br&gt;+interactuarCon(otro: ReinoProtista): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;div&gt;&lt;b&gt;Trypanosoma&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Trypanosoma(name: String)&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="&lt;div&gt;&lt;b&gt;Paramecio&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Paramecio(nombre: String)&lt;br&gt;+interactuarCon(otro: ReinoProtista): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="860" y="20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="&lt;div&gt;&lt;b&gt;Stentor&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Stentor(name: String)&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="20" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="&lt;div&gt;&lt;b&gt;Foraminifero&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Foraminifero(name: String)&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="&lt;div&gt;&lt;b&gt;Ameba&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Ameba(nombre: String)&lt;br&gt;+moverHacia(otro: ReinoProtista): void&lt;br&gt;+getNombre(): String&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1560" y="20" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="&lt;div&gt;&lt;b&gt;Toxoplasma&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Toxoplasma(name: String)&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1840" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="&lt;div&gt;&lt;b&gt;Plasmodium&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Plasmodium(nombre: String)&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="2060" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="&lt;div&gt;&lt;b&gt;App&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+main(args: String[]): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="2280" y="20" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="&lt;div&gt;&lt;b&gt;Flagelado&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Flagelado(nombre: String)&lt;br&gt;+alimentar(alimento: AlimentHeterotrofol): void&lt;br&gt;+fotosintetizar(): void&lt;br&gt;+nadar(): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="540" y="300" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="&lt;div&gt;&lt;b&gt;Ciliado&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Ciliado(nombre: String)&lt;br&gt;+alimentar(alimento: AlimentHeterotrofol): void&lt;br&gt;+desplazar(): void&lt;br&gt;+generarCorriente(): void&lt;br&gt;+conjugacion(): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="980" y="300" width="320" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="&lt;div&gt;&lt;b&gt;Sarcodino&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Sarcodino(nombre: String)&lt;br&gt;+alimentar(alimento: AlimentHeterotrofol): void&lt;br&gt;+fagocitar(): void&lt;br&gt;+desplazar(): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1420" y="300" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="&lt;div&gt;&lt;b&gt;Alga&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-nombre: String&lt;br&gt;-color: String&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Alga(nombre: String, color: String)&lt;br&gt;+getNombre(): String&lt;br&gt;+getTipo(): String&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1600" y="460" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="&lt;div&gt;&lt;b&gt;Esporozoo&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+Esporozoo(nombre: String)&lt;br&gt;+alimentar(alimento: AlimentoParasitariol): void&lt;br&gt;+parasitar(): void&lt;br&gt;+infectar(): void&lt;br&gt;+formarEsporas(): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1940" y="300" width="320" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="&lt;div&gt;&lt;b&gt;ReinoProtista&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;#nombre: String&lt;br&gt;#unicelular: boolean&lt;br&gt;#tipoNutricion: String&lt;br&gt;#tipoMovimiento: String&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ReinoProtista(nombre: String, unicelular: boolean, tipoNutricion: String, tipoMovimiento: String)&lt;br&gt;+alimentarG(): void&lt;br&gt;+reproducir(): void&lt;br&gt;+desplazar(): void&lt;br&gt;+respirar(): void&lt;br&gt;+excretar(): void&lt;br&gt;+toString(): String&lt;br&gt;+getNombre(): String&lt;br&gt;+setNombre(nombre: String): void&lt;br&gt;+isUnicelular(): boolean&lt;br&gt;+setUnicelular(unicelular: boolean): void&lt;br&gt;+getTipoNutricion(): String&lt;br&gt;+setTipoNutricion(tipoNutricion: String): void&lt;br&gt;+getTipoMovimiento(): String&lt;br&gt;+setTipoMovimiento(tipoMovimiento: String): void&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="520" y="640" width="580" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="&lt;div&gt;&lt;b&gt;AlimentHeterotrofol&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+getNombre(): String&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="880" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="&lt;div&gt;&lt;b&gt;AlimentoParasitariol&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+getNombre(): String&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1680" y="880" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="3" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="580" />
+              <mxPoint x="520" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="4" target="13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="180" />
+              <mxPoint x="700" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="4" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="120" />
+              <mxPoint x="480" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="5" target="13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="6" target="14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="180" />
+              <mxPoint x="1140" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="6" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="120" />
+              <mxPoint x="1000" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="7" target="14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="8" target="15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1440" y="180" />
+              <mxPoint x="1580" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="9" target="15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="9" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1690" y="140" />
+              <mxPoint x="1690" y="620" />
+              <mxPoint x="810" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="10" target="17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1940" y="180" />
+              <mxPoint x="2100" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="11" target="17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="13" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="440" />
+              <mxPoint x="700" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="13" target="19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="500" />
+              <mxPoint x="1370" y="500" />
+              <mxPoint x="1370" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="14" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="460" />
+              <mxPoint x="1140" y="620" />
+              <mxPoint x="810" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="14" target="19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="520" />
+              <mxPoint x="1370" y="520" />
+              <mxPoint x="1370" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="15" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="440" />
+              <mxPoint x="1580" y="620" />
+              <mxPoint x="810" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="15" target="19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="440" />
+              <mxPoint x="1580" y="860" />
+              <mxPoint x="1370" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="16" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1720" y="620" />
+              <mxPoint x="810" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" parent="1" source="17" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2100" y="460" />
+              <mxPoint x="2100" y="620" />
+              <mxPoint x="810" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="17" target="20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2100" y="460" />
+              <mxPoint x="2100" y="860" />
+              <mxPoint x="1770" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" parent="1" source="19" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1180" y="910" />
+              <mxPoint x="1180" y="850" />
+              <mxPoint x="1100" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" parent="1" source="20" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="910" />
+              <mxPoint x="1580" y="850" />
+              <mxPoint x="1100" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="50" value="Organismo(abstract)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="780" width="390" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="&lt;div&gt;- nombre : String&lt;/div&gt;&lt;div&gt;- tipoReproduccion : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="50">
+          <mxGeometry y="26" width="390" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="50">
+          <mxGeometry y="80" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="&lt;div&gt;+ Organismo(nombre : String, tipoReproduccion : String)&lt;/div&gt;&lt;div&gt;+ getNombre() : String&lt;/div&gt;&lt;div&gt;+ setNombre(nombre : String) : void&lt;/div&gt;&lt;div&gt;+ getTipoReproduccion() : String&lt;/div&gt;&lt;div&gt;+ setTipoReproduccion(tipo : String) : void&lt;/div&gt;&lt;div&gt;+ analizarComportamiento() : void (abstract)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="50">
+          <mxGeometry y="88" width="390" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="Alga" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="470" width="400" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="&lt;div&gt;- habitat : String&lt;/div&gt;&lt;div&gt;- color : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="54">
+          <mxGeometry y="26" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="54">
+          <mxGeometry y="66" width="400" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="&lt;div&gt;+ Alga(nombre : String, tipoReproduccion : String, habitat : String, color : String)&lt;/div&gt;&lt;div&gt;+ getHabitat() : String&lt;/div&gt;&lt;div&gt;+ setHabitat(habitat : String) : void&lt;/div&gt;&lt;div&gt;+ getColor() : String&lt;/div&gt;&lt;div&gt;+ setColor(color : String) : void&lt;/div&gt;&lt;div&gt;+ analizarComportamiento() : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="54">
+          <mxGeometry y="74" width="400" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="Volvox" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2510" y="170" width="420" height="196" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="&lt;div&gt;- diametro : double&lt;/div&gt;&lt;div&gt;- cantidadCelulas : int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="62">
+          <mxGeometry y="26" width="420" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="62">
+          <mxGeometry y="70" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="&lt;div&gt;+ Volvox(nombre : String, tipoReproduccion : String, habitat : String, color : String, diametro : double, cantidadCelulas : int)&lt;/div&gt;&lt;div&gt;+ getDiametro() : double&lt;/div&gt;&lt;div&gt;+ setDiametro(diametro : double) : void&lt;/div&gt;&lt;div&gt;+ getCantidadCelulas() : int&lt;/div&gt;&lt;div&gt;+ setCantidadCelulas(cantidadCelulas : int) : void&lt;/div&gt;&lt;div&gt;+ analizarComportamiento() : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="62">
+          <mxGeometry y="78" width="420" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2630.44" y="386" />
+              <mxPoint x="2630.44" y="586" />
+            </Array>
+            <mxPoint x="2630" y="366" as="sourcePoint" />
+            <mxPoint x="2630" y="466" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2530.44" y="696" />
+              <mxPoint x="2530.44" y="896" />
+            </Array>
+            <mxPoint x="2530" y="676" as="sourcePoint" />
+            <mxPoint x="2530" y="776" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;entryX=1;entryY=0.643;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="1130" />
+              <mxPoint x="360" y="1130" />
+              <mxPoint x="360" y="1110" />
+              <mxPoint x="2800" y="1110" />
+              <mxPoint x="2800" y="629" />
+            </Array>
+            <mxPoint x="39.95999999999998" y="550" as="sourcePoint" />
+            <mxPoint x="2800" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
