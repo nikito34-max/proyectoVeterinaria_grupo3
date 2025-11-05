@@ -15,11 +15,13 @@ public class Laboratorio {
     }
 
     public void iniciarMundoProtista() {
+        Estudiante estudiante = new Estudiante("1102345678", "Lucas", "Vera");
         Biologo biologo = new Biologo("1887654321", "Dra. Ana", "Biología Molecular");
         Ameba ameba = new Ameba("Ameba Proteus");
         Paramecio paramecio = new Paramecio("Paramecio Aurelia");
         Euglena euglena = new Euglena("Euglena Viridis");
         Volvox volvox = new Volvox("Volvox Globator");
+        DataFast dataFast = new DataFast();
 
         if (!biologo.setClave("usrBio", "passBio")) {
             System.out.println("No se pudo establecer la clave del biólogo.");
