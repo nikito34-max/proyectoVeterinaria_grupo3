@@ -122,8 +122,8 @@
                         <mxPoint x="930" y="530" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="R1: Registrarse para el acceso al laboratorio&lt;div&gt;R2: Registrar especie a ser estudiada&lt;/div&gt;&lt;div&gt;R3: observar las especies que que se registraron&lt;br&gt;R4: Interaccion de las especies con el mundo exterioor&lt;/div&gt;&lt;div&gt;R5: interaccion del biologo con el laboratorio y las especies&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="115" y="960" width="330" height="90" as="geometry"/>
+                <mxCell id="28" value="R1: Registrarse para el acceso al laboratorio&lt;div&gt;R2: Registrar especie a ser estudiada&lt;/div&gt;&lt;div&gt;R3: observar las especies que que se registraron&lt;br&gt;R4: Interaccion de las especies con el mundo exterioor&lt;/div&gt;&lt;div&gt;R5: interaccion del biologo con el laboratorio y las especies&lt;/div&gt;&lt;div&gt;R6: Alimentar especies&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="115" y="955" width="330" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

@@ -3,6 +3,7 @@
 logs/
 temp/
 bin/
+output/
 obj/
 .vscode/
 .idea/
