@@ -25,7 +25,10 @@ public class MicroBiologo {
         System.out.println(nombre + " observa a " + protista.getNombre() + " bajo el microscopio.");
     }
 
-    public String getLogin() { return login; }
-    public String getPassword() { return password; }
-    public String getNombre() { return nombre; }
+    public String getLogin() {
+         return login; }
+    public String getPassword() { 
+        return password; }
+    public String getNombre() {
+         return nombre; }
 }
