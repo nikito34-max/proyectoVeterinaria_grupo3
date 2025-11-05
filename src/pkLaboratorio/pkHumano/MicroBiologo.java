@@ -1,4 +1,5 @@
 package pkLaboratorio.pkHumano;
+import pkLaboratorio.pkProtista.pkAlgas.Alga;
 
 import pkLaboratorio.pkProtista.pkProtozoo.ReinoProtista;
 
@@ -24,8 +25,12 @@ public class MicroBiologo {
     public void observar(ReinoProtista protista) {
         System.out.println(nombre + " observa a " + protista.getNombre() + " bajo el microscopio.");
     }
-
+    public void observarAlga(Alga alga) {
+        System.out.println("El microbiólogo " + nombre + " está observando el alga:");
+        alga.analizar();
+    }
     public String getLogin() { return login; }
     public String getPassword() { return password; }
     public String getNombre() { return nombre; }
 }
+
