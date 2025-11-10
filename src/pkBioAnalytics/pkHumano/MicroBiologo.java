@@ -14,10 +14,10 @@ public class MicroBiologo extends Persona {
     }
 
     public void observar() {
-
+        System.out.println("El microbiólogo " + getNombre() + " está observando muestras bajo el microscopio.");
     }
 
     public void analizar() {
-
+        System.out.println("El microbiólogo " + getNombre() + " está analizando las muestras y anotando datos importantes.");    
     }
 }

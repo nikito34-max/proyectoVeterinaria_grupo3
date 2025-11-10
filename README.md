@@ -1,12 +1,11 @@
 # Proyecto Biologo Grupo 3
 
-## Requerimientos:
+## Requerimientos
 
-R1: Registrarse para el acceso al laboratorio
-R2: Registrar especie a ser estudiada
-R3: observar las especies que que se registraron
-R4: Interaccion de las especies con el mundo exterioor
-R5: interaccion del biologo con el laboratorio y las especies
-R6: Alimentar especies
+R1: Analizar como se comportan los protozoos.
+R2: Heliozoo se enfrenta a ameba para ver quien gana.
+R3: Dinidium ataca a Paramecium y y mostrar el proceso de la descarga de los extrusomas que se realizó bajo el microscopio.
+R4:
+R5:
 
 
