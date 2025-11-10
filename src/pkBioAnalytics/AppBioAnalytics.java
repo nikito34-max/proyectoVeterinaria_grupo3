@@ -2,12 +2,15 @@ package pkBioAnalytics;
 import pkBioAnalytics.pkHumano.*;
 import pkBioAnalytics.pkReinoViviente.pkProtista.*;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class AppBioAnalytics {
 	public void iniciarMundoProtista() {
-        Ameba ameba = new Ameba("Amebina", 25, 20);
-        Heliozoo heliozoo = new Heliozoo("Heliozon", 40, 12);
+        List<Protozoo> protozoos = List.of(          
+            new Ameba("Amebina", 25, 20),
+            new Heliozoo("Heliozon", 40, 12)
+        );
 
         MicroBiologo microBio = new MicroBiologo(
             "Juan",
@@ -48,52 +51,27 @@ public class AppBioAnalytics {
         }
 
         input.close();
+
         if (acceso) {
-        System.out.println("\nRegistro de protozoos en el sistema\n");
-        registrar(heliozoo);
-        registrar(ameba);
+            System.out.println("\nRegistro de protozoos en el sistema\n");
+            registrar(protozoos);
 
-        System.out.println();   
-        microBio.observar();
-        System.out.println(); 
-        ameba.mover();
-        heliozoo.mover();
+            microBio.observar(protozoos);
 
-        heliozoo.descansar(2);
-        ameba.dividir();
-
-        System.out.println("\n==caso de uso: REQ 02==\n");
-        heliozoo.cazar(ameba);
-        ameba.cazar(heliozoo);
-        System.out.println(); 
-
-        System.out.println("\n==caso de uso: REQ 01==\n");
-        microBio.analizar();
+            System.out.println("\n==caso de uso: REQ 01==\n");
+            microBio.analizar();
         }
     }
 
-    public boolean registrar(Rizopodo protozoo) {
-        if (protozoo == null) return false;
-        System.out.println("Rizópodo registrado: " + protozoo.getNombre());
-        return true;
+    public void registrar(List<Protozoo> protozoos) { 
+        if (!protozoos.isEmpty()) {
+            for (Protozoo protozoo : protozoos) {            
+                if (protozoo != null) {    
+                    System.out.println("Protozoo del tipo " + protozoo.getClass().getSimpleName() + " registrado.");
+                } else {
+                    System.out.println("Debe ingresar un protozoo");
+                }
+            }
+        }
     }
-
-    // public boolean registrar(Flagelado protozoo) {
-    //     if (protozoo == null) return false;
-    //     System.out.println("Flagelado registrado: " + protozoo.getNombre());
-    //     return true;
-    // }
-
-    // public boolean registrar(Ciliado protozoo) {
-    //     if (protozoo == null) return false;
-    //     System.out.println("Ciliado registrado: " + protozoo.getNombre());
-    //     return true;
-    // }
-
-    // public boolean registrar(Esporozoo protozoo) {
-    //     if (protozoo == null) return false;
-    //     System.out.println("Esporozoo registrado: " + protozoo.getNombre());
-    //     return true;
-    // }
-    
 }
