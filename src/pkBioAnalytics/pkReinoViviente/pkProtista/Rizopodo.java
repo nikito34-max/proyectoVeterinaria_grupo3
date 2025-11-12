@@ -2,14 +2,13 @@ package pkBioAnalytics.pkReinoViviente.pkProtista;
 
 public abstract class Rizopodo extends Protozoo {
     private Double tamanio;
-
     public Rizopodo() {
         super();
         this.setTamanio(0.0);
     }
     public Rizopodo(String nombre, double tamanio) {
         super();
-        this.setNombre(nombre);
+        super.setNombre(nombre);
         this.setTamanio(tamanio);
     }
 
@@ -28,11 +27,9 @@ public abstract class Rizopodo extends Protozoo {
         }
         System.out.println(this.getNombre() + " reposa en el fondo del agua durante " + horas + " horas.");
     }
-
     public Double getTamanio() {
         return tamanio;
     }
-
     public void setTamanio(Double tamanio) {
         this.tamanio = tamanio;
     }

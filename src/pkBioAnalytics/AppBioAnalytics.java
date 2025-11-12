@@ -63,6 +63,8 @@ public class AppBioAnalytics {
 
 
 
+
+
             System.out.println("\nRegistro de protozoos en el sistema\n");
             List<Protozoo> protozoos = Arrays.asList(ameba1, heliozoo1);
             registrar(protozoos);
@@ -79,6 +81,10 @@ public class AppBioAnalytics {
             heliozoo1.cazar(ameba1);
             ameba1.cazar(heliozoo1);
             System.out.println();
+
+            
+
+
 
 
 
