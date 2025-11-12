@@ -14,14 +14,14 @@ public class AppBioAnalytics {
             "Juan",
             "Perez", 
             "1743782691", 
-            "juan123", 
-            "password123", 
+            "juan", 
+            "123", 
             "Microbiología Molecular"
         );
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Laboratorio de Biologia " + getNombreLab());
+        System.out.println("Laboratorio de Biologia BioAnalytics");
         System.out.println("Autenticarse en el Laboratorio");
 
         boolean acceso = false;
@@ -53,20 +53,16 @@ public class AppBioAnalytics {
         if (acceso) {
             Ameba ameba1 = new Ameba("Amebina", 25, 20);
             Heliozoo heliozoo1 = new Heliozoo("Heliozon", 40, 12);
-
-            // --- NUEVO ---
-            // 1. Creación de los objetos Esporozoo
+            Dinidium dinidium = new Dinidium("DinidiumSt", 6.0, 5, true, 20, true);
+            Paramecium paramecium = new Paramecium("ParameciumSt", 6.0, 4, true);
+    
             Esporozoo esporozooA = new Esporozoo("Cepa A (Plasmodium)", 1500);
             Esporozoo esporozooB = new Esporozoo("Cepa B (Toxoplasma)", 1200);
-            // --- FIN NUEVO ---
 
 
             System.out.println("\nRegistro de protozoos en el sistema\n");
     	
-            // --- NUEVO ---
-            // 2. Añadimos los esporozoos a la lista de registro
-            List<Protozoo> protozoos = Arrays.asList(ameba1, heliozoo1, esporozooA, esporozooB);
-            // --- FIN NUEVO ---
+            List<Protozoo> protozoos = Arrays.asList(ameba1, heliozoo1, esporozooA, esporozooB, dinidium, paramecium);
 
             registrar(protozoos);
             System.out.println();
@@ -84,8 +80,6 @@ public class AppBioAnalytics {
             System.out.println();
 
             
-            // --- NUEVO ---
-            // 3. Simulación del Requerimiento 4 (R4) para Esporozoos
             System.out.println("\n== Caso de uso: REQ 04 ==");
             System.out.println("Simulando infección competitiva entre " + esporozooA.getNombre() + " y " + esporozooB.getNombre());
             
@@ -103,9 +97,31 @@ public class AppBioAnalytics {
             esporozooA.dividirse(); 
             System.out.println("Nuevo conteo de " + esporozooA.getNombre() + ": " + esporozooA.getNumEsporozoitos());
             esporozooB.mover(); 
-            // --- FIN NUEVO ---
+            
 
-    
+            Dinidium dinidiumEncontrada = null;
+        Paramecium parameciumEncontrado = null;
+
+        
+        System.out.println();
+           
+            dinidium.localizar(parameciumEncontrado);
+            dinidium.inmovilizar (true);
+            dinidium.cazar (parameciumEncontrado);
+            dinidium.ingerir (parameciumEncontrado);
+            dinidium.crecer (6);
+            dinidiumEncontrada = dinidium;
+            paramecium.crecer(0.25);
+            paramecium.serAtacado(dinidiumEncontrada);
+            parameciumEncontrado = paramecium; 
+
+        if (dinidiumEncontrada != null && parameciumEncontrado != null) {
+            System.out.println("\n== Caso de uso: REQ 03 ==");
+            dinidiumEncontrada.cazar(parameciumEncontrado);
+            parameciumEncontrado.serAtacado(dinidiumEncontrada);
+            System.out.println();
+        }
+
             System.out.println("\n==caso de uso: REQ 01==\n");
             microBio.analizar();
         }
