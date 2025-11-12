@@ -2,22 +2,14 @@ package pkBioAnalytics;
 import pkBioAnalytics.pkHumano.*;
 import pkBioAnalytics.pkReinoViviente.pkProtista.*;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class AppBioAnalytics {
     private String nombreLab;
 
-    public AppBioAnalytics(String nombreLab) {
-        this.nombreLab = nombreLab;
-    }
-
 	public void inciarLaboratorio() {
-        List<Protozoo> protozoos = List.of(          
-            new Ameba("Amebina", 25, 20),
-            new Heliozoo("Heliozon", 40, 12)
-        );
-
         MicroBiologo microBio = new MicroBiologo(
             "Juan",
             "Perez", 
@@ -59,11 +51,49 @@ public class AppBioAnalytics {
         input.close();
 
         if (acceso) {
+            Ameba ameba1 = new Ameba("Amebina", 25, 20);
+            Heliozoo heliozoo1 = new Heliozoo("Heliozon", 40, 12);
+
+
+
+
+
+
+
+
+
+
             System.out.println("\nRegistro de protozoos en el sistema\n");
+            List<Protozoo> protozoos = Arrays.asList(ameba1, heliozoo1);
             registrar(protozoos);
+            System.out.println();
 
-            microBio.observar(protozoos);
+            System.out.println("Simulacion de interacciones entre protozoos...\n");
+            microBio.observar();
 
+            ameba1.mover();
+            ameba1.dividir();
+            heliozoo1.mover();
+            heliozoo1.descansar(2);
+            System.out.println("\n== Caso de uso: REQ 02 ==");
+            heliozoo1.cazar(ameba1);
+            ameba1.cazar(heliozoo1);
+            System.out.println();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
             System.out.println("\n==caso de uso: REQ 01==\n");
             microBio.analizar();
         }

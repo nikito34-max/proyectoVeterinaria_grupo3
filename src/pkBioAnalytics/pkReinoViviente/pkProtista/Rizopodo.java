@@ -1,6 +1,6 @@
 package pkBioAnalytics.pkReinoViviente.pkProtista;
 
-public class Rizopodo extends Protozoo {
+public abstract class Rizopodo extends Protozoo {
     private Double tamanio;
 
     public Rizopodo() {

@@ -1,11 +1,11 @@
 package pkBioAnalytics.pkReinoViviente.pkProtista;
 
-public class Esporozoo extends Protozoo {
+public abstract class Esporozoo extends Protozoo {
     private boolean esParasito;
 
     public Esporozoo() {
         super();
-        // Por definición, los esporozoos son parásitos
+        
         this.setEsParasito(true); 
     }
 
@@ -31,7 +31,6 @@ public class Esporozoo extends Protozoo {
         System.out.println(this.getNombre() + " entra en fase de reposo dentro de la célula huésped durante " + horas + " horas.");
     }
 
-    // Método específico de Esporozoo
     public void infectar() {
         if (!this.getEstaVivo()) {
             System.out.println(this.getNombre() + " no puede infectar porque está muerto.");
